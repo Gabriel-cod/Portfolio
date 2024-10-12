@@ -1,0 +1,540 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    font-family: "Chakra Petch";
+}
+
+.bg{
+    width: 100%;
+    background-image: url(../assets/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header{
+    position: fixed;
+    z-index: 2;
+    height: 10vh;
+    width: 80%;
+    margin-top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 60px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+header .logo{
+    display: inline-block;
+    height: 10vh;
+    width: auto;
+}
+
+header .logo img{
+    height: 10vh;
+    width: auto;
+    border-radius: 60px;
+}
+
+header .social{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    text-align: right;
+    vertical-align: top;
+    margin-top: 1.6vw;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+header .social div, header .social img{
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    height: 5vh;
+    margin-top: -0.5vh;
+    background-color: transparent;
+}
+
+header .social img{
+    cursor: pointer;
+}
+
+header .menu{
+    box-sizing: border-box !important;
+    display: inline-block;
+    margin-left: 30%;
+    margin-right: 10%;
+}
+
+header .menu ul{
+    list-style-type: disc;
+    list-style-position: inside;
+    color: white;
+    overflow: hidden;
+}
+
+header .menu ul li{
+    box-sizing: border-box;
+    margin: 0 5px 3vh 5px;
+    color: white;
+    float: left;
+    border-radius: 60px;
+    padding: 2px 15px;
+}
+
+header .menu ul a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1vw;
+    font-weight: bold;
+}
+
+header .menu ul li:hover{
+    background-color: #15B0AC;
+    color: black;
+}
+
+header .menu ul li:hover a{
+    color: black;
+}
+
+.content{
+    /* padding-top: calc(10vh + 50px); */
+    width: 100%;
+}
+
+#home, #about, #skills, #projects, #bottom_section{
+    height: calc(10vh + 50px);
+}
+
+.home{
+    background-color: rgba(0, 0, 0, 0.95);
+    width: 70vw;
+    height: 500px;
+    margin: 0 auto;
+    padding: 2vh 4vw;
+    border-radius: 30px;
+}
+
+.home div{
+    float: left;
+}
+
+.home div.title{
+    width: calc((70vw - 8vw) / 2);
+}
+
+.home h1{
+    font-size: 3.2vw;
+    color: white;
+    line-height: 5vw;
+    padding-top: 10vh;
+}
+
+.home h1.role{
+    padding-top: 0;
+    font-size: 1.5vw;
+}
+
+strong{
+    color: #28F5EE;
+    line-height: 0;
+}
+
+.home .description{
+    width: calc((70vw - 8vw) / 2);
+    height: 100%;
+    text-align: right;
+    padding: 8vh 0 8vh 2vw;
+}
+
+.home .description p{
+    color: white;
+    font-size: 1.3vw;
+    margin-bottom: 5vh;
+}
+
+.home .description p strong{
+    font-size: 1.3vw;
+}
+
+.about{
+    background-color: black;
+    border-top: 50px solid rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    width: 100%;
+    height: 500px;
+}
+
+.about .greeting{
+    width: 50%;
+    float: left;
+}
+
+.about .greeting .title{
+    text-align: center;
+    width: 100%;
+}
+
+.about .greeting h1{
+    display: inline-block;
+    color: #28F5EE;
+    padding: 0 2vw;
+    margin-bottom: 10px;
+}
+
+.about .greeting span{
+    display: inline-block;
+    width: 10vw;
+    height: 0.1vh;
+    background-color: #15B0AC;
+    margin-bottom: 1vh;
+}
+
+.about .greeting .storytelling{
+    margin: 1vh 5vw;
+}
+
+.about .greeting .storytelling p{
+    margin-top: 25px;
+    font-size: 20px;
+    color: white;
+}
+
+.about .profile_photo{
+    float: left;
+    width: 50%;
+}
+
+.about .profile_photo .frame_photo{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border-radius: 100%;
+    border: 3px solid #28F5EE;
+    overflow: hidden;
+    background-image: url(../assets/profile.jpg);
+    background-position: 0;
+    background-size: contain;
+}
+
+.skills{
+    width: 100%;
+    height: auto;
+    padding: 50px 250px;
+    background-color: black;
+}
+
+.skills > div{
+        vertical-align: top;
+        display: inline-block;
+        background-color: transparent;
+        border-radius: 30px;
+        box-shadow: 1px 1px 20px #15B0AC;
+        margin: 20px 20px;
+        width: 10vw;
+        height: 10vw;
+        /* border: 5px solid #15B0AC; */
+        /* filter: drop-shadow(1px 1px 20px #15B0AC); */
+    }
+    
+    .skills .stack{
+        margin: 0 auto;
+        width: 80%;
+        height: 80%;
+        box-sizing: border-box;
+        overflow: auto;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.skills > div h4{
+    text-align: center;
+    color: white;
+    font-size: 120%;
+}
+
+.skills .python{
+    background-image: url(../assets/skills_img/python-logo.png);
+}
+
+.skills .sql{
+    background-image: url(../assets/skills_img/sql.png);
+}
+
+.skills .django{
+    background-image: url(../assets/skills_img/django.png);
+}
+
+.skills .flask{
+    background-color: none;
+    background-image: url(../assets/skills_img/flask.png);
+}
+
+.skills .html{
+    background-image: url(../assets/skills_img/html_logo.png);
+    background-size: 65%;
+}
+
+.skills .css{
+    background-image: url(../assets/skills_img/css_logo.png);
+}
+
+.skills .javascript{
+    background-image: url(../assets/skills_img/js.png);
+    background-position: 55% 50%;
+}
+
+.skills .mysql{
+    background-image: url(../assets/skills_img/mysql.png);
+    background-size: 160%;
+}
+
+.skills .postgresql{
+    background-image: url(../assets/skills_img/postgresql.png);
+}
+
+.skills .selenium{
+    background-image: url(../assets/skills_img/selenium.png);
+    background-size: 120%;
+}
+
+.skills .scrapy{
+    background-image: url(../assets/skills_img/scrapy.png);
+    background-size: 80%;
+}
+
+.skills .pandas{
+    background-image: url(../assets/skills_img/pandas.png);
+    background-position: 60% 50%;
+    background-size: 85%;
+}
+
+.skills .power-bi{
+    background-image: url(../assets/skills_img/power_bi.png);
+    background-position: 60% 50%;
+}
+
+.skills .excel{
+    background-image: url(../assets/skills_img/excel.png);
+}
+
+.skills .aws{
+    background-image: url(../assets/skills_img/aws.png);
+    background-size: 90%;
+}
+.skills .linux{
+    background-image: url(../assets/skills_img/linux.png);
+    background-size: 85%;
+}
+
+.skills .restful{
+    background-image: url(../assets/skills_img/restful.png);
+    background-size: 90%;
+}
+
+.skills .git{
+    background-image: url(../assets/skills_img/git.png);
+}
+
+.projects{
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    background-color: rgba(10,10,10,0.8);
+    border-radius: 40px;
+    box-shadow: 1px 1px 50px black;
+    padding: 5vh 5vw 5vh 5vw;
+    text-align: center;
+}
+
+.projects h1, .skills h1{
+    text-align: center;
+    font-size: 5.5vh;
+    margin-bottom: 2.5vh;
+}
+
+.projects .project-container{
+    display: inline-block;
+    margin: 3vh auto;
+    width: 45vw;
+    height: 25vw;
+    padding: 2vw 0 0 2vw;
+    vertical-align: top;
+    background-color: rgb(50, 50, 50);
+    border-radius: 40px;
+    box-shadow: 1px 1px 20px #15B0AC;
+    overflow: hidden;
+}
+
+.projects .project-container .title{
+    display: block;
+    width: 100%;
+    height: 10%;
+}
+
+.projects .project-container .title h1 strong{
+    text-align: center;
+    font-size: 70%;
+    vertical-align: top;
+}
+
+.projects .project-container .description-container{
+    vertical-align: top;
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+}
+
+.projects .project-container .img-project{
+    margin-right: -1vw;
+    display: inline-block;
+    margin-left: 1vw;
+    width: 50%;
+    height: 90%;
+    opacity: 95%;
+}
+
+.projects .indeed-project .img-project{
+    background-image: url(../assets/indeed_jobs_webscraping/indeed_app.png);
+    background-position: -200px -500px;   
+}
+
+.projects .notary_offices-project .img-project{
+    background-image: url(../assets/notary_offices_project/app_img.png);
+    background-size: cover;
+    background-position: 0;   
+}
+
+.projects .project-container .description p{
+    margin-bottom: 1.5vw;
+    color: #ccc;
+    font-weight: 600;
+    text-align: left;
+    font-size: 120%;
+}
+
+.projects .project-container .description-container .description{
+    height: 65%;
+}
+
+.projects .project-container .description-container .skills-tags{
+    padding: 1vw 2vw 1vw 0;
+    /* background-color: blue; */
+    width: 100%;
+    height: 20%;
+}
+
+.projects .project-container .show-project{
+    position: relative;
+    z-index: 1;
+    background-color: aqua;
+    border-radius: 50px;
+    box-sizing: content-box;
+    padding: 8px 5px;
+    width: 120px;
+    height: 20px;
+    left: 90%;
+    bottom: 15%;
+}
+
+.projects .project-container a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.project-container .skills-tags div{
+    float: left;
+    box-sizing: content-box;
+    padding: 0vh 10px;
+    margin: 3px;
+    width: auto;
+    height: 20px;
+    border-radius: 60px;
+    font-weight: bold;
+    color: black;
+}
+
+.skills-tags div[class|=python]{
+    background-color: yellow;
+}
+
+.skills-tags div[class|=scrapy]{
+    background-color: red;
+}
+
+.skills-tags div[class|=selenium]{
+    background-color: greenyellow;
+}
+
+.skills-tags div[class|=excel]{
+    background-color: green;
+}
+
+.skills-tags div[class|=sql]{
+    background-color: rgb(100, 100, 255);
+}
+
+.skills-tags div[class|=html]{
+    background-color: rgb(7, 173, 173);
+}
+
+.skills-tags div[class|=git]{
+    background-color: rgb(255, 100, 100);
+}
+
+.bottom_section .additional-information{
+    border-top: 2px solid #ccc;
+    padding-top: 50px;
+    text-align: center;
+    height: 500px;
+    width: 100%;
+    background-image: linear-gradient(rgb(10,10,10) 30%,#1ca7a2)
+}
+
+.bottom_section .additional-information h1{
+    font-size: 2vw;
+}
+
+.bottom_section .additional-information .contact{
+    margin-top: 220px;
+}
+
+.bottom_section .created-by{
+    height: 120px;
+    width: 100%;
+    background-color: black;
+}
+
+.contact h2{
+    margin-bottom: 20px;
+}
+
+.contact div{
+    display: inline-block;
+    text-align: center;
+}
+
+
+.contact div img{
+    width: 75px;
+}
+
+.created-by > div{
+    padding-top: 40px;
+}
+
+.created-by h3{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
