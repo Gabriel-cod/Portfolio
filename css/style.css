@@ -181,7 +181,8 @@ strong em{
 }
 
 .about{
-    background-color: black;
+    background-color: #031633;
+    border-radius: 2vw;
     box-sizing: border-box;
     width: 100%;
     height: auto;
@@ -246,7 +247,8 @@ strong em{
     height: auto;
     padding: 5vh 2vw;
     text-align: center;
-    background-color: black;
+    background-color: #020d1d;
+    border-radius: 2vw;
 }
 
 .skills > div{
@@ -373,146 +375,16 @@ strong em{
     text-align: center;
 }
 
+
+.projects .card-img-top{
+    background-size: cover; 
+    height: 40vh
+}
+
 .projects h1, .skills h1{
     text-align: center;
     font-size: 5.5vh;
     margin-bottom: 2.5vh;
-}
-
-.projects .project-container{
-    display: inline-block;
-    margin: 3vh auto;
-    width: 70vw;
-    height: 60vh;
-    padding: 2vw 0 0 2vw;
-    vertical-align: top;
-    background-color: rgb(50, 50, 50);
-    border-radius: 40px;
-    box-shadow: 1px 1px 20px #15B0AC;
-    overflow: hidden;
-}
-
-.projects .project-container .title{
-    display: block;
-    line-height: 35px;
-    width: 100%;
-    height: 70px;
-    margin-bottom: -2vw;
-    margin-top: 10px;
-}
-
-.projects .project-container .title h1 strong{
-    text-align: center;
-    font-size: 30px;
-    vertical-align: top;
-}
-
-.projects .project-container .description-container{
-    vertical-align: top;
-    display: inline-block;
-    width: 45%;
-    height: 70%;
-}
-
-.projects .project-container .img-project{
-    margin-right: -1vw;
-    display: inline-block;
-    margin-left: 1vw;
-    width: 50%;
-    height: 70%;
-    opacity: 95%;
-}
-
-.projects .indeed-project .img-project{
-    background-image: url(../assets/indeed_jobs_webscraping/indeed_app.png);
-    background-position: -200px -500px;
-}
-
-.projects .notary_offices-project .img-project{
-    background-image: url(../assets/notary_offices_project/app_img.png);
-    background-size: cover;
-    background-position: 0;
-}
-
-.projects .project-container .description p{
-    margin-bottom: 1vw;
-    color: #ccc;
-    font-weight: 600;
-    text-align: left;
-    font-size: 120%;
-}
-
-.projects .project-container .description-container .description{
-    height: 65%;
-    overflow-y: auto;
-}
-
-.projects .project-container .description-container .skills-tags{
-    padding: 1vw 2vw 1vw 0;
-    /* background-color: blue; */
-    width: 100%;
-    height: 20%;
-}
-
-.projects .project-container .show-project{
-    z-index: 1;
-    background-color: rgb(20, 20, 20);
-    border-radius: 50vw;
-    padding: 1vh 10vw;
-    margin: 1vw auto;
-    text-align: center;
-    vertical-align: bottom;
-    width: fit-content;
-    height: 10%;
-}
-
-.projects .project-container a{
-    text-align: center;
-    vertical-align: middle;
-    text-decoration: none;
-    color: #28F5EE;
-    font-size: 100%;
-    font-weight: bold;
-}
-
-.project-container .skills-tags div{
-    float: left;
-    box-sizing: content-box;
-    padding: 0vh 10px;
-    margin: 3px;
-    width: auto;
-    height: 20px;
-    border-radius: 60px;
-    font-weight: bold;
-    color: black;
-}
-
-.skills-tags div[class|=python]{
-    background-color: yellow;
-}
-
-.skills-tags div[class|=scrapy]{
-    background-color: red;
-}
-
-.skills-tags div[class|=selenium]{
-    background-color: greenyellow;
-}
-
-.skills-tags div[class|=excel]{
-    background-color: green;
-}
-
-.skills-tags div[class|=sql]{
-    background-color: rgb(100, 100, 255);
-}
-
-.skills-tags div[class|=html]{
-    background-color: rgb(7, 173, 173);
-}
-
-.skills-tags div[class|=git]{
-    background-color: rgb(255, 100, 100);
 }
 
 .bottom_section .additional-information{
@@ -553,7 +425,7 @@ strong em{
 }
 
 .created-by > div{
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 .created-by h3{
