@@ -9,6 +9,15 @@ html, body{
     font-family: "Chakra Petch";
 }
 
+.carousel-item > .container{
+    min-height: 50vh;
+    text-align: center;
+}
+
+.fa-solid{
+    height: 8vh;
+}
+
 .bg{
     width: 100%;
     background-image: url(../assets/bg2.jpg);
@@ -114,7 +123,7 @@ header .menu ul li:hover a{
     width: 100%;
 }
 
-#home, #about, #skills, #projects, #bottom_section{
+#spy-home, #spy-about, #spy-skills, #spy-projects, #bottom_section{
     height: calc(10vh + 50px);
 }
 
@@ -149,6 +158,10 @@ header .menu ul li:hover a{
 }
 
 strong{
+    color: white;
+}
+
+strong em{
     color: #28F5EE;
     line-height: 0;
 }
